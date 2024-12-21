@@ -1,5 +1,4 @@
 def draw_pattern():
-    # Get the size of the pattern
     while True:
         try:
             size = int(input("Enter the size of the pattern: "))
@@ -13,8 +12,8 @@ def draw_pattern():
     row = 0
     while row < size:
         for _ in range(size):
-            print("*", end="")  # Print asterisks as required by the check
-        print()  # Move to the next line after printing all asterisks in the row
+            print("*", end="")
+        print()
         row += 1
 
 if __name__ == "__main__":
