@@ -1,10 +1,17 @@
 def draw_pattern():
-    size = int(input("Enter the size of the pattern: "))
-    pattern=input("Enter the size of the pattern: ")
+    # Get the size of the pattern
+    while True:
+        try:
+            size = int(input("Enter the size of the pattern: "))
+            if size > 0:
+                break
+            else:
+                print("Please enter a positive integer.")
+        except ValueError:
+            print("Invalid input. Please enter an integer.")
 
-    while size <= 0:
-        print("Please enter a positive integer.")
-        size = int(input("Enter the size of the pattern: "))
+    # Get the pattern character or string
+    pattern = input("Enter the character or string for the pattern: ")
 
     row = 0
     while row < size:
