@@ -20,4 +20,4 @@ out=cal(num1,num2,operation)
 if out=="error":
     print("Cannot divide by zero.")
 else:
-    print(f"The result is {out}")
+    print(f"The result is {out}.")
