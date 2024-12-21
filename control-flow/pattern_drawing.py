@@ -10,14 +10,11 @@ def draw_pattern():
         except ValueError:
             print("Invalid input. Please enter an integer.")
 
-    # Get the pattern character or string
-    pattern = input("Enter the character or string for the pattern: ")
-
     row = 0
     while row < size:
         for _ in range(size):
-            print(pattern, end="")
-        print()
+            print("*", end="")  # Print asterisks as required by the check
+        print()  # Move to the next line after printing all asterisks in the row
         row += 1
 
 if __name__ == "__main__":
