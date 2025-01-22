@@ -13,5 +13,3 @@ def safe_divide(numerator, denominator):
 
     except ValueError:
         return "Error: Please enter numeric values only."
-result=safe_divide("ten",7)
-print(result)
