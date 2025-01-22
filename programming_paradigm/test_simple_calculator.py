@@ -1,4 +1,4 @@
-class simple_calculator:
+class SimpleCalculator:
 
     def add(self, a, b):
         return a + b
@@ -17,7 +17,7 @@ class simple_calculator:
 import unittest
 class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.calc = simple_calculator()
+        self.calc = SimpleCalculator()
 
     def test_addition(self):
         self.assertEqual(self.calc.add(2, 3), 5)
