@@ -11,7 +11,16 @@ class Book:
             self._is_checked_out = True
             return True
         return False
+    def return_book(self):
 
+        if self._is_checked_out:
+            self._is_checked_out = False
+            return True
+        return False
+
+    def is_available(self):
+
+        return not self._is_checked_out
 class Library :
     def __init__(self):
         self._books = []
