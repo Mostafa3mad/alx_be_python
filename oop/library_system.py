@@ -22,7 +22,7 @@ class PrintBook(Book):
 
 class Library:
     def __init__(self):
-        self.books=[]
+        self.books = []
     def add_book(self, book):
         if isinstance(book,Book):
             self.books.append(book)
