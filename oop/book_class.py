@@ -1,4 +1,4 @@
-class Book :
+class Book:
     def __init__(self,title,author,year):
         self.title=str(title)
         self.author=str(author)
